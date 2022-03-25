@@ -1,0 +1,23 @@
+{
+  "name": "atlas",
+  "version": "1.0.0",
+  "description": "Serverless URL shortner",
+  "main": "index.js",
+  "scripts": {
+    "build": "node scripts/clean.mjs && tsc -p src",
+    "build:up": "npm run build && deta deploy"
+  },
+  "author": "ArtieFuzzz#8298",
+  "license": "MIT",
+  "dependencies": {
+    "deta": "^1.1.0",
+    "express": "^4.17.3",
+    "tslib": "^2.3.1"
+  },
+  "devDependencies": {
+    "@artiefuzzz/ts": "^1.2.2",
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.23",
+    "fs-extra": "^10.0.1"
+  }
+}
