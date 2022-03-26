@@ -2,7 +2,7 @@
   "extends": "@artiefuzzz/ts",
   "compilerOptions": {
     "target": "ES6",
-    "outDir": "../",
+    "outDir": "../build",
     "module": "CommonJS",
     "importHelpers": true
   },

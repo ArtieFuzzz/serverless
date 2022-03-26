@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "node scripts/clean.mjs && tsc -p src",
-    "build:up": "npm run build && deta deploy"
+    "build:deploy": "npm run build && deta deploy"
   },
   "author": "ArtieFuzzz#8298",
   "license": "MIT",
