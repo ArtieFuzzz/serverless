@@ -1,0 +1,32 @@
+{
+  "name": "Artie",
+  "shortAboutMe": "I'm a Developer from Australia! I taught myself programming just to make a Discord bot...",
+  "nicknames": [
+    "Artsy",
+    "Fuzz",
+    "Fuzz Butt",
+    "Fuzzy"
+  ],
+  "hobbies": [
+    "Gaming",
+    "Listening to Music",
+    "Programming",
+    "Socializing with Friends"
+  ],
+  "programmingLanguages": [
+    "Deno",
+    "Javascript",
+    "Rust",
+    "TypeScript"
+  ],
+  "databases": [
+    "MongoDB",
+    "PostgreSQL"
+  ],
+  "projects": {
+    "raven": {
+      "description": "Moderation focused discord bot",
+      "github": "https://github.com/blue-toaster/raven"
+    }
+  }
+}

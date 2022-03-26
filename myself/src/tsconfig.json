@@ -1,0 +1,8 @@
+{
+  "extends": "@artiefuzzz/ts",
+  "compilerOptions": {
+    "target": "ES2018",
+    "outDir": "../build"
+  },
+  "include": ["."]
+}
