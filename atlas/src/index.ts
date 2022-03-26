@@ -16,4 +16,4 @@ app.get('/:id', async (req: FastifyRequest<{ Params: { id: string } }>, reply: F
   return reply.redirect(url.value)
 })
 
-module.exports = app
+export default app

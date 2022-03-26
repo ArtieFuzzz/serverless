@@ -1,0 +1,10 @@
+{
+  "extends": "@artiefuzzz/ts",
+  "compilerOptions": {
+    "target": "ES6",
+    "outDir": "../build",
+    "module": "CommonJS",
+    "importHelpers": true
+  },
+  "include": ["."],
+}
