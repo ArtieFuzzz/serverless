@@ -9,11 +9,11 @@ app.register(require('fastify-no-icon'))
 app.get('/:id', async (req: FastifyRequest<{ Params: { id: string } }>, reply: FastifyReply) => {
   if (!req.params.id) return reply.send({ error: false, message: 'You must provide an ID!' })
 
-  const url = await db.get(req.params.id) as unknown as string
+  const url = await db.get(req.params.id) as { key: string, value: string }
 
-  if (!url) return reply.code(404).send({ error: false, message: 'That Short URL doesn\'t exist!' })
+  if (!url.value) return reply.code(404).send({ error: false, message: 'That Short URL doesn\'t exist!' })
 
-  return reply.code(200).redirect(url)
+  return reply.redirect(url.value)
 })
 
 module.exports = app
