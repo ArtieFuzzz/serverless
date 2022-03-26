@@ -5,7 +5,7 @@ const db = Base('urls')
 const app = express()
 
 app.use(express.json())
-app.set('X-Powered-By', 'Fuzzy - ArtieFuzzz#8298')
+app.disable('x-powered-by')
 
 app.get('/:id', async (req: Request, res: Response) => {
   if (!req.params.id) return res.json({ error: false, message: 'You must provide an ID!' })
@@ -14,7 +14,7 @@ app.get('/:id', async (req: Request, res: Response) => {
 
   if (!data) return res.status(404).json({ error: false, message: 'That Short URL doesn\'t exist!' })
 
-  return res.redirect(data.value as string)
+  return res.status(200).redirect(data.value as string)
 })
 
 app.post('/:id', async (req: Request, res: Response) => {
@@ -25,7 +25,7 @@ app.post('/:id', async (req: Request, res: Response) => {
   
   await db.put(req.body.url as string, req.params.id)
 
-  return res.json({ id: req.params.id })
+  return res.status(201).json({ id: req.params.id })
 })
 
 app.delete('/:id', async (req: Request, res: Response) => {
