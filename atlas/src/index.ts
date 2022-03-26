@@ -1,19 +1,19 @@
 import { Base } from 'deta'
-import express, { Request, Response } from 'express'
+import fastify, { FastifyReply, FastifyRequest } from 'fastify'
 
+const app = fastify()
 const db = Base('urls')
-const app = express()
 
-app.disable('x-powered-by')
+app.register(require('fastify-no-icon'))
 
-app.get('/:id', async (req: Request, res: Response) => {
-  if (!req.params.id) return res.json({ error: false, message: 'You must provide an ID!' })
+app.get('/:id', async (req: FastifyRequest<{ Params: { id: string } }>, reply: FastifyReply) => {
+  if (!req.params.id) return reply.send({ error: false, message: 'You must provide an ID!' })
 
-  const data = await db.get(req.params.id)
+  const url = await db.get(req.params.id) as unknown as string
 
-  if (!data) return res.status(404).json({ error: false, message: 'That Short URL doesn\'t exist!' })
+  if (!url) return reply.code(404).send({ error: false, message: 'That Short URL doesn\'t exist!' })
 
-  return res.status(200).redirect(data.value as string)
+  return reply.code(200).redirect(url)
 })
 
 module.exports = app
