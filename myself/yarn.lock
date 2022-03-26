@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@artiefuzzz/ts@^1.3.2":
+"@artiefuzzz/ts@1.3.2":
   "integrity" "sha512-J3rKy+Osoy9OKMGDe/20fDOc6dIP3tIHUGswSSajRVNnoLykw2cQ1xSoBRkFR98N4cLfpt6qblBi8w6f6p74Yw=="
   "resolved" "https://registry.npmjs.org/@artiefuzzz/ts/-/ts-1.3.2.tgz"
   "version" "1.3.2"
@@ -16,7 +16,7 @@
   dependencies:
     "ajv" "^6.12.6"
 
-"@types/node@^17.0.23":
+"@types/node@17.0.23":
   "integrity" "sha512-UxDxWn7dl97rKVeVS61vErvw086aCYhDLyvRQZ5Rk65rZKepaFdm53GeqXaKBuOhED4e9uWq34IC3TdSdJJ2Gw=="
   "resolved" "https://registry.npmjs.org/@types/node/-/node-17.0.23.tgz"
   "version" "17.0.23"
@@ -185,7 +185,7 @@
   "resolved" "https://registry.npmjs.org/forwarded/-/forwarded-0.2.0.tgz"
   "version" "0.2.0"
 
-"fs-extra@^10.0.1":
+"fs-extra@10.0.1":
   "integrity" "sha512-NbdoVMZso2Lsrn/QwLXOy6rm0ufY2zEOKCDzJR/0kBsb0E6qed0P3iYK+Ath3BfvXEeu4JhEtXLgILx5psUfag=="
   "resolved" "https://registry.npmjs.org/fs-extra/-/fs-extra-10.0.1.tgz"
   "version" "10.0.1"
