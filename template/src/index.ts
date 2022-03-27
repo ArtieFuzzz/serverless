@@ -2,10 +2,10 @@ import fastify from 'fastify'
 
 const app = fastify()
 
-app.register(require('fastify-no-icon'))
+void app.register(require('fastify-no-icon'))
 
-app.get('/', (_req, res) => {
-  res.send('Hello!')
+app.get('/', async (_req, res) => {
+  await res.send('Hello!')
 })
 
 export default app

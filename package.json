@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "@artiefuzzz/eslint-config": "^1.2.0",
+    "@artiefuzzz/ts": "^1.3.2",
+    "@types/node": "^17.0.23",
+    "eslint": "^8.12.0",
+    "tslib": "^2.3.1",
+    "typescript": "^4.6.3"
+  },
+  "scripts": {
+    "lint": "eslint --cache --report-unused-disable-directives --ignore-path .gitignore --ext .ts .",
+    "lint:fix": "eslint --cache --report-unused-disable-directives --ext .ts . --fix",
+    "build": "npm run clean && node scripts/build-all.mjs",
+    "clean": "node scripts/clean-all.mjs"
+  },
+  "dependencies": {
+    "fs-extra": "^10.0.1"
+  }
+}

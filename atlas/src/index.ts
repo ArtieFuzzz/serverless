@@ -4,7 +4,7 @@ import fastify, { FastifyReply, FastifyRequest } from 'fastify'
 const app = fastify()
 const db = Base('urls')
 
-app.register(require('fastify-no-icon'))
+void app.register(require('fastify-no-icon'))
 
 app.get('/:id', async (req: FastifyRequest<{ Params: { id: string } }>, reply: FastifyReply) => {
   if (!req.params.id) return reply.send({ error: false, message: 'You must provide an ID!' })
