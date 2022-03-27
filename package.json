@@ -11,7 +11,8 @@
     "lint": "eslint --cache --report-unused-disable-directives --ignore-path .gitignore --ext .ts .",
     "lint:fix": "eslint --cache --report-unused-disable-directives --ext .ts . --fix",
     "build": "npm run clean && node scripts/build-all.mjs",
-    "clean": "node scripts/clean-all.mjs"
+    "clean": "node scripts/clean-all.mjs",
+    "deploy": "npm run build && node scripts/deploy-all.mjs"
   },
   "dependencies": {
     "fs-extra": "^10.0.1"

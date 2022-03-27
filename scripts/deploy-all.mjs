@@ -4,7 +4,7 @@ import { join } from 'path'
 const dirs = ['atlas', 'myself', 'template']
 
 dirs.forEach((dir) => {
-  exec('tsc -p ./src/', {
+  exec('deta deploy', {
     cwd: join(process.cwd(), dir),
     shell: true,
     env: process.env
