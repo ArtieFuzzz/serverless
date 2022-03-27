@@ -1,0 +1,5 @@
+{
+  "name": "atlas",
+  "description": "An application that can shorten URLs",
+  "runtime": "nodejs14.x"
+}
