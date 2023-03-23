@@ -7,7 +7,7 @@
   "license": "MIT",
   "dependencies": {
     "deta": "^1.1.0",
-    "fastify": "^3.27.4",
+    "fastify": "^4.0.0",
     "fastify-no-icon": "^4.0.0",
     "tslib": "^2.3.1"
   },

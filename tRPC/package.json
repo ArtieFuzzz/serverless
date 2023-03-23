@@ -6,7 +6,7 @@
   "license": "MIT",
   "dependencies": {
     "@trpc/server": "^9.20.3",
-    "fastify": "^3.27.4",
+    "fastify": "^4.0.0",
     "fastify-no-icon": "^4.0.0",
     "fastify-plugin": "^3.0.1",
     "tslib": "^2.3.1",
