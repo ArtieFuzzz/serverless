@@ -123,19 +123,17 @@
   "resolved" "https://registry.npmjs.org/fastify-error/-/fastify-error-0.3.1.tgz"
   "version" "0.3.1"
 
-"fastify-no-icon@^4.0.0":
-  "integrity" "sha512-4LzH9zgICq1+vKhSmfAqmYZUYpWU/yvonH7NSN8cb0xYt9VE0MR92kXPuS3+4XMavBXtfMFAoUEZqpQemJRuzQ=="
-  "resolved" "https://registry.npmjs.org/fastify-no-icon/-/fastify-no-icon-4.0.0.tgz"
-  "version" "4.0.0"
+"fastify-no-icon@^6.0.0":
+  "integrity" "sha512-sQJ5TytGq6LUcQctvEiQm1wj/+g7qXMVDirr1VsmudvnMYDUY0gLl0fTtre6qd0SZ2rNh/E/3OVViy/rzfBJPA=="
+  "resolved" "https://registry.npmjs.org/fastify-no-icon/-/fastify-no-icon-6.0.0.tgz"
+  "version" "6.0.0"
   dependencies:
-    "fastify-plugin" "^2.3.0"
+    "fastify-plugin" "^4.2.1"
 
-"fastify-plugin@^2.3.0":
-  "integrity" "sha512-I+Oaj6p9oiRozbam30sh39BiuiqBda7yK2nmSPVwDCfIBlKnT8YB3MY+pRQc2Fcd07bf6KPGklHJaQ2Qu81TYQ=="
-  "resolved" "https://registry.npmjs.org/fastify-plugin/-/fastify-plugin-2.3.4.tgz"
-  "version" "2.3.4"
-  dependencies:
-    "semver" "^7.3.2"
+"fastify-plugin@^4.2.1":
+  "integrity" "sha512-79ak0JxddO0utAXAQ5ccKhvs6vX2MGyHHMMsmZkBANrq3hXc1CHzvNPHOcvTsVMEPl5I+NT+RO4YKMGehOfSIg=="
+  "resolved" "https://registry.npmjs.org/fastify-plugin/-/fastify-plugin-4.5.0.tgz"
+  "version" "4.5.0"
 
 "fastify@^3.27.4":
   "integrity" "sha512-SOfnHBxG9zxCSIvt6aHoR/cao8QBddWmGP/mb5KQKRc+KI1kB7b79M2hCDOTSyHdLAF2OX+oI6X3weeLc+MqKg=="
