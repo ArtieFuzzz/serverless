@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "fastify": "^3.27.4",
-    "fastify-no-icon": "^4.0.0",
+    "fastify-no-icon": "^6.0.0",
     "tslib": "^2.3.1"
   }
 }
