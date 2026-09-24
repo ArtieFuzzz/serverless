@@ -5,7 +5,7 @@
   "author": "ArtieFuzzz#8298",
   "license": "MIT",
   "dependencies": {
-    "fastify": "^3.27.4",
+    "fastify": "^5.0.0",
     "fastify-no-icon": "^4.0.0",
     "tslib": "^2.3.1"
   },
